@@ -1,0 +1,45 @@
+.site{
+    &-name{
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    &-header{
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        background: $gray;
+        
+        &--upper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $site-color;
+            color: #ffffff;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            a{
+                color: #ffffff;
+                text-decoration: none;
+            }
+            .wrap{
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+        }
+        &--lower{
+            display: flex;
+            justify-content: flex-end;
+            align-items: start;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            .wrap{
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+            a{
+                padding: 0.5em;
+                font-size: 14px;
+            }
+        }
+    }
+}

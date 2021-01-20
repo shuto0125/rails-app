@@ -1,0 +1,25 @@
+body{
+    font-size: 16px;
+}
+a{
+    opacity: 1;
+    transition: opacity 0.3s;
+    &:hover{
+        opacity: 0.8;
+        transition: opacity 0.3s;
+    }
+}
+.wrap{
+    // padding: 1em;
+    box-sizing: border-box;
+}
+
+.site-content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#notice{
+    font-weight: bold;
+    // color: lighten($site-color, 20%);
+}

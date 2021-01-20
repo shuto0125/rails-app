@@ -1,0 +1,21 @@
+.site-content{
+    form{
+        label{
+            width: 5em;
+        }
+        .field{
+            display: flex;
+            align-items: start;
+            margin-bottom: 1em;
+
+            input[type="number"],
+            textarea{
+                width: 100%;
+                padding: 0.5em;
+                border-radius: 0.3em;
+                border-color: darken($gray, 20%);
+                background: none;
+            }
+        }
+    }
+}

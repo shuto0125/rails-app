@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>App</title>
+    <title><%= content_for?(:title) ? yield(:title) : "わいメモ"%> App</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,8 +9,24 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  
   <body>
-    <%= yield %>
+
+    <header class="site-header ">
+      <div class="site-header--upper wrap container-fluid">
+        <a href="/" class="site-name"><%= content_for?(:title) ? yield(:title) : "わいメモ"%></a>
+        <div class="user-data">
+          〇〇さん
+        </div>
+      </div>
+
+      <nav class="site-header--lower wrap container-fluid">
+        <a href="/memos">メモ一覧</a>
+        <a href="/users">ユーザー一覧</a>
+      </nav>
+    </header>
+    <section class="site-content container-fluid">
+      <%= yield %>
+    </section>
   </body>
 </html>

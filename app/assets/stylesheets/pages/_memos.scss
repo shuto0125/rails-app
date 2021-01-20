@@ -1,0 +1,28 @@
+.table{
+    &-memos{
+        width: 100%;
+        tr{
+            border-top: 1px solid darken($gray, 10%);
+            background-color: transparent;
+            transition: background-color 0.3s;
+            &:first-child{
+                // border-top: 1px solid #000;
+            }
+            &:last-child{
+                border-bottom: 1px solid darken($gray, 10%);
+            }
+            th{
+                background: #fff;
+            }
+            &:hover{
+                background-color: lighten($site-color,50%);
+                transition: background-color 0.3s;
+                
+            }
+        }
+        th,
+        td{
+            padding: 0.5em;
+        }
+    }
+}
